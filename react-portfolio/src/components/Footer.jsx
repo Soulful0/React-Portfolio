@@ -1,12 +1,14 @@
 import React from "react";
+import "../index.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer class="nav-wrap">
       <a
         href="https://github.com/your-github-profile"
         target="_blank"
         rel="noopener noreferrer"
+        class="nav-style"
       >
         GitHub
       </a>
@@ -14,6 +16,7 @@ function Footer() {
         href="https://www.linkedin.com/in/your-linkedin-profile/"
         target="_blank"
         rel="noopener noreferrer"
+        class="nav-style"
       >
         LinkedIn
       </a>
@@ -21,6 +24,7 @@ function Footer() {
         href="https://stackoverflow.com/users/your-stackoverflow-id"
         target="_blank"
         rel="noopener noreferrer"
+        class="nav-style"
       >
         Stack Overflow
       </a>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../index.css";
 
 function Contact() {
   const [formState, setFormState] = useState({
@@ -44,6 +45,7 @@ function Contact() {
             name="name"
             value={formState.name}
             onChange={handleChange}
+            class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
           />
           {errors.name && <span>{errors.name}</span>}
         </div>
@@ -55,6 +57,7 @@ function Contact() {
             name="email"
             value={formState.email}
             onChange={handleChange}
+            class="validate[required,custom[email]] feedback-input"
           />
           {errors.email && <span>{errors.email}</span>}
         </div>
@@ -65,10 +68,13 @@ function Contact() {
             name="message"
             value={formState.message}
             onChange={handleChange}
+            class="validate[required,length[6,300]] feedback-input"
           ></textarea>
           {errors.message && <span>{errors.message}</span>}
         </div>
-        <button type="submit">Submit</button>
+        <button value="SEND" type="submit">
+          Submit
+        </button>
       </form>
     </section>
   );

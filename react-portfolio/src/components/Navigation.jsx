@@ -1,27 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../index.css";
 
 function Navigation() {
   return (
     <nav>
-      <ul>
-        <li>
-          <NavLink to="/" exact activeClassName="active">
+      <ul class="nav-wrap">
+        <li class="nav-options">
+          <NavLink class="nav-style" to="/" exact activeClassName="active">
             About Me
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/portfolio" activeClassName="active">
+        <li class="nav-options">
+          <NavLink class="nav-style" to="/portfolio" activeClassName="active">
             Portfolio
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/contact" activeClassName="active">
+        <li class="nav-options">
+          <NavLink class="nav-style" to="/contact" activeClassName="active">
             Contact
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/resume" activeClassName="active">
+        <li class="nav-options">
+          <NavLink class="nav-style" to="/resume" activeClassName="active">
             Resume
           </NavLink>
         </li>
