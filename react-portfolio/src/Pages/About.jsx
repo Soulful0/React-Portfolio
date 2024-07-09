@@ -1,14 +1,11 @@
 import React from "react";
+import pfp from "../../img/userimg.png";
 
 function About() {
   return (
     <section>
       <h2>About Me</h2>
-      <img
-        class="usr-img"
-        src="../img/userimg.png"
-        alt="Photo of Josh Gingold"
-      />
+      <img class="usr-img" src={pfp} alt="Photo of Josh Gingold" />
       <p class="about-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
         molestiae ratione voluptatibus, eligendi ea nobis cumque, quae itaque in

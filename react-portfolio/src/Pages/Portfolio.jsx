@@ -1,18 +1,20 @@
 import React from "react";
 import Project from "../components/Project";
 import "../index.css";
+import blogImg from "../../img/blog.png";
+import gymwebsiteImg from "../../img/gymwebsite.png";
 
 function Portfolio() {
   const projects = [
     {
       title: "Gym Website",
-      image: "../img/gymwebsite.png",
+      image: gymwebsiteImg,
       deployedLink: "https://soulful0.github.io/Gym-Website/",
       repoLink: "https://github.com/Soulful0/Gym-Website",
     },
     {
       title: "Blog",
-      image: "../img/blog.png",
+      image: blogImg,
       deployedLink: "https://soulful0.github.io/Challenge-4/",
       repoLink: "https://github.com/Soulful0/Challenge-4",
     },
